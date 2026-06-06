@@ -2,6 +2,7 @@ const state = {
   terms: [],
   category: "전체",
   query: "",
+  tag: "",
 };
 
 const els = {
@@ -11,6 +12,7 @@ const els = {
   search: document.querySelector("#searchInput"),
   reset: document.querySelector("#resetButton"),
   empty: document.querySelector("#emptyState"),
+  activeFilter: document.querySelector("#activeFilter"),
 };
 
 const normalize = (value) => String(value ?? "").trim().toLocaleLowerCase("ko-KR");
@@ -39,11 +41,13 @@ const uniqueCategories = () => [
 
 const filteredTerms = () => {
   const query = normalize(state.query);
+  const tag = normalize(state.tag);
 
   return state.terms.filter((term) => {
     const categoryMatches = state.category === "전체" || term.category === state.category;
     const queryMatches = !query || searchText(term).includes(query);
-    return categoryMatches && queryMatches;
+    const tagMatches = !tag || (term.tags ?? []).some((termTag) => normalize(termTag) === tag);
+    return categoryMatches && queryMatches && tagMatches;
   });
 };
 
@@ -59,12 +63,20 @@ const renderTabs = () => {
 const renderTerms = () => {
   const terms = filteredTerms();
   els.count.textContent = terms.length;
+  els.activeFilter.textContent = state.tag ? `· #${state.tag}` : "";
   els.empty.hidden = terms.length > 0;
 
   els.grid.innerHTML = terms
     .map((term) => {
       const tags = (term.tags ?? [])
-        .map((tag) => `<li>${escapeHtml(tag)}</li>`)
+        .map((tag) => {
+          const isActive = normalize(tag) === normalize(state.tag);
+          return `
+            <li>
+              <button class="tag-button" type="button" aria-pressed="${isActive}" data-tag="${escapeHtml(tag)}">#${escapeHtml(tag)}</button>
+            </li>
+          `;
+        })
         .join("");
       const source = term.sourceUrl
         ? `<a class="source-link" href="${escapeHtml(term.sourceUrl)}" target="_blank" rel="noreferrer">영상 구간 보기</a>`
@@ -103,9 +115,20 @@ els.search.addEventListener("input", (event) => {
   renderTerms();
 });
 
+els.grid.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-tag]");
+  if (!button) return;
+  state.tag = button.dataset.tag;
+  state.category = "전체";
+  state.query = "";
+  els.search.value = "";
+  render();
+});
+
 els.reset.addEventListener("click", () => {
   state.category = "전체";
   state.query = "";
+  state.tag = "";
   els.search.value = "";
   render();
 });
