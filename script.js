@@ -107,18 +107,21 @@ els.tabs.addEventListener("click", (event) => {
   const button = event.target.closest("[data-category]");
   if (!button) return;
   state.category = button.dataset.category;
+  state.tag = "";
   render();
 });
 
 els.search.addEventListener("input", (event) => {
   state.query = event.target.value;
+  state.tag = "";
   renderTerms();
 });
 
 els.grid.addEventListener("click", (event) => {
   const button = event.target.closest("[data-tag]");
   if (!button) return;
-  state.tag = button.dataset.tag;
+  const selectedTag = button.dataset.tag;
+  state.tag = normalize(state.tag) === normalize(selectedTag) ? "" : selectedTag;
   state.category = "전체";
   state.query = "";
   els.search.value = "";
