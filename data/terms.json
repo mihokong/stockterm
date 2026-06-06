@@ -1,0 +1,124 @@
+{
+  "terms": [
+    {
+      "term": "순매도",
+      "category": "시장 및 매매",
+      "definition": "외국인, 기관, 개인 등 특정 투자 주체가 일정 기간 동안 산 금액보다 판 금액이 더 많은 상태입니다.",
+      "example": "외국인이 반도체 대형주를 많이 팔면 외국인 순매도라고 표현합니다.",
+      "tags": ["매매동향", "투자주체"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=153"
+    },
+    {
+      "term": "순매수",
+      "category": "시장 및 매매",
+      "definition": "특정 투자 주체가 일정 기간 동안 판 금액보다 산 금액이 더 많은 상태입니다.",
+      "example": "기관이 코스닥 장비주를 많이 사들이면 기관 순매수라고 합니다.",
+      "tags": ["매매동향", "투자주체"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=838"
+    },
+    {
+      "term": "시간외 거래",
+      "category": "시장 및 매매",
+      "definition": "정규 장이 열리기 전이나 마감된 뒤에 이뤄지는 주식 거래입니다.",
+      "example": "해외 기업 실적 발표가 국내 장 시작 전 시간외 거래에 영향을 줄 수 있습니다.",
+      "tags": ["거래시간", "시장"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=807"
+    },
+    {
+      "term": "차익실현 매물",
+      "category": "시장 및 매매",
+      "definition": "주가 상승으로 이익을 본 투자자가 수익을 확정하기 위해 내놓는 매도 물량입니다.",
+      "example": "단기 급등 후 차익실현 매물이 나오면 주가가 눌릴 수 있습니다.",
+      "tags": ["매도", "수익확정"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=1388"
+    },
+    {
+      "term": "조정",
+      "category": "시장 및 매매",
+      "definition": "주가나 지수가 단기간에 많이 오른 뒤 과열을 식히며 쉬어가거나 하락하는 흐름입니다.",
+      "example": "상승 추세 안에서도 단기 조정은 자연스럽게 나타날 수 있습니다.",
+      "tags": ["가격흐름", "리스크"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=1439"
+    },
+    {
+      "term": "순환매",
+      "category": "시장 및 매매",
+      "definition": "증시 자금이 한 업종에만 머무르지 않고 여러 업종으로 번갈아 이동하며 상승세가 이어지는 현상입니다.",
+      "example": "반도체에서 백화점, 다시 코스닥 장비주로 관심이 옮겨가면 순환매 장세로 볼 수 있습니다.",
+      "tags": ["업종", "수급"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=897"
+    },
+    {
+      "term": "IPO",
+      "category": "기업 공개 및 투자",
+      "definition": "비상장 기업이 주식시장에 상장하기 위해 기업 정보를 공개하고 주식을 투자자에게 파는 절차입니다.",
+      "example": "성장성이 큰 기업의 IPO에는 기관과 개인 투자자의 관심이 몰릴 수 있습니다.",
+      "tags": ["상장", "기업공개"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=618"
+    },
+    {
+      "term": "유상증자",
+      "category": "기업 공개 및 투자",
+      "definition": "기업이 새 주식을 발행해 기존 주주나 새 투자자에게 돈을 받고 팔아 자금을 조달하는 방식입니다.",
+      "example": "유상증자는 성장 투자 재원을 마련하는 수단이지만 기존 주식 가치가 희석될 수 있습니다.",
+      "tags": ["자금조달", "신주발행"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=630"
+    },
+    {
+      "term": "공모주 청약",
+      "category": "기업 공개 및 투자",
+      "definition": "상장 예정 기업의 새 주식을 사겠다고 투자자가 신청하는 절차입니다.",
+      "example": "인기 공모주는 청약 경쟁률이 높아 배정 주식 수가 적어질 수 있습니다.",
+      "tags": ["IPO", "청약"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=681"
+    },
+    {
+      "term": "데카콘",
+      "category": "기업 공개 및 투자",
+      "definition": "기업 가치가 100억 달러 이상인 비상장 스타트업을 뜻합니다.",
+      "example": "10억 달러 이상 스타트업은 유니콘, 100억 달러 이상은 데카콘이라고 부릅니다.",
+      "tags": ["스타트업", "기업가치"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=1508"
+    },
+    {
+      "term": "코스피",
+      "category": "지수 및 거시경제",
+      "definition": "국내 유가증권시장에 상장된 주요 기업들의 주가 흐름을 보여주는 대표 지수입니다.",
+      "example": "대형 제조업과 금융주 흐름은 코스피 지수에 큰 영향을 줍니다.",
+      "tags": ["국내증시", "지수"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=774"
+    },
+    {
+      "term": "코스닥",
+      "category": "지수 및 거시경제",
+      "definition": "중소·벤처·기술 기업이 많이 상장된 국내 주식시장의 대표 지수입니다.",
+      "example": "바이오, 게임, 반도체 장비주 흐름은 코스닥 투자심리에 영향을 줄 수 있습니다.",
+      "tags": ["국내증시", "지수"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=817"
+    },
+    {
+      "term": "필라델피아 반도체 지수",
+      "category": "지수 및 거시경제",
+      "definition": "미국 증시에 상장된 주요 반도체 기업들의 주가 흐름을 모아 산출하는 지수입니다.",
+      "example": "필라델피아 반도체 지수가 급락하면 국내 반도체주 투자심리도 약해질 수 있습니다.",
+      "tags": ["반도체", "해외지수"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=1417"
+    },
+    {
+      "term": "부의 효과",
+      "category": "지수 및 거시경제",
+      "definition": "주식이나 부동산 등 자산 가격이 오르면 소비자가 더 부유해졌다고 느껴 소비를 늘리는 현상입니다.",
+      "example": "증시가 강하면 고가 소비재나 백화점 매출이 함께 좋아질 수 있습니다.",
+      "tags": ["소비", "자산가격"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=907"
+    },
+    {
+      "term": "소부장",
+      "category": "지수 및 거시경제",
+      "definition": "소재, 부품, 장비를 줄인 말로 반도체·디스플레이 등 제조업 공급망 기업을 가리킬 때 자주 씁니다.",
+      "example": "반도체 투자가 늘면 관련 소부장 기업에도 수혜 기대가 생길 수 있습니다.",
+      "tags": ["공급망", "반도체"],
+      "sourceUrl": "https://www.youtube.com/watch?v=LUi0niug91c&t=968"
+    }
+  ]
+}
