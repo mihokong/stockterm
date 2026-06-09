@@ -1,30 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <defs>
-    <!-- Background Gradient: Deep Teal to Navy -->
+    <!-- Background Gradient: Deep Slate Black to Midnight Navy -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b7285" />
-      <stop offset="100%" stop-color="#172a45" />
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="100%" stop-color="#121a2e" />
     </linearGradient>
 
-    <!-- Chart Line Gradient: Vibrant Green to Yellow/Gold -->
+    <!-- Chart Line Gradient: Ultra-Bright Neon Cyan to Electric Orange-Gold -->
     <linearGradient id="chartGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0f8f72" />
-      <stop offset="45%" stop-color="#3cc3a4" />
-      <stop offset="100%" stop-color="#f3b23e" />
+      <stop offset="0%" stop-color="#00ffd8" />
+      <stop offset="50%" stop-color="#a3ff33" />
+      <stop offset="100%" stop-color="#ffb700" />
     </linearGradient>
 
-    <!-- Glow/Shadow for Depth -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="1" stdDeviation="0.8" flood-color="#000" flood-opacity="0.35" />
+    <!-- Strong Neon Glow Effect -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-color="#00ffd8" flood-opacity="0.4" />
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.6" />
     </filter>
   </defs>
 
   <!-- Rounded Background (Squircle) -->
   <rect width="32" height="32" rx="7.5" fill="url(#bgGrad)" />
 
-  <!-- Subtle grid lines -->
-  <line x1="4" y1="22" x2="28" y2="22" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
-  <line x1="16" y1="4" x2="16" y2="28" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+  <!-- Subtle grid lines with slightly higher visibility against pitch black -->
+  <line x1="4" y1="22" x2="28" y2="22" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+  <line x1="16" y1="4" x2="16" y2="28" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
 
   <!-- Rising Chart Line & Arrow -->
   <g filter="url(#glow)">
@@ -32,7 +33,7 @@
     <path d="M 7,22 C 10,22 11,16 13,16 C 15,16 17,19.5 19,19.5 C 21,19.5 23.5,12 25,9" 
           fill="none" 
           stroke="url(#chartGrad)" 
-          stroke-width="2.8" 
+          stroke-width="3" 
           stroke-linecap="round" 
           stroke-linejoin="round" />
           
@@ -40,7 +41,7 @@
     <path d="M 21,9 H 25 V 13" 
           fill="none" 
           stroke="url(#chartGrad)" 
-          stroke-width="2.8" 
+          stroke-width="3" 
           stroke-linecap="round" 
           stroke-linejoin="round" />
   </g>
