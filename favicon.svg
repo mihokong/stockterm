@@ -6,42 +6,35 @@
       <stop offset="100%" stop-color="#121a2e" />
     </linearGradient>
 
-    <!-- Chart Line Gradient: Ultra-Bright Neon Cyan to Electric Orange-Gold -->
-    <linearGradient id="chartGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00ffd8" />
-      <stop offset="50%" stop-color="#a3ff33" />
-      <stop offset="100%" stop-color="#ffb700" />
-    </linearGradient>
-
-    <!-- Strong Neon Glow Effect -->
+    <!-- Strong White Glow and Black Shadow for High Definition -->
     <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-color="#00ffd8" flood-opacity="0.4" />
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.6" />
+      <feDropShadow dx="0" dy="1" stdDeviation="0.8" flood-color="#ffffff" flood-opacity="0.35" />
+      <feDropShadow dx="0" dy="2" stdDeviation="1.8" flood-color="#000000" flood-opacity="0.75" />
     </filter>
   </defs>
 
   <!-- Rounded Background (Squircle) -->
   <rect width="32" height="32" rx="7.5" fill="url(#bgGrad)" />
 
-  <!-- Subtle grid lines with slightly higher visibility against pitch black -->
-  <line x1="4" y1="22" x2="28" y2="22" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
-  <line x1="16" y1="4" x2="16" y2="28" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  <!-- Subtle grid lines -->
+  <line x1="4" y1="22" x2="28" y2="22" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+  <line x1="16" y1="4" x2="16" y2="28" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
 
-  <!-- Rising Chart Line & Arrow -->
+  <!-- Thicker White Rising Chart Line & Arrow -->
   <g filter="url(#glow)">
-    <!-- Smooth rising curve -->
+    <!-- Smooth rising curve (Thicker stroke-width of 3.8) -->
     <path d="M 7,22 C 10,22 11,16 13,16 C 15,16 17,19.5 19,19.5 C 21,19.5 23.5,12 25,9" 
           fill="none" 
-          stroke="url(#chartGrad)" 
-          stroke-width="3" 
+          stroke="#ffffff" 
+          stroke-width="3.8" 
           stroke-linecap="round" 
           stroke-linejoin="round" />
           
-    <!-- Arrowhead -->
+    <!-- Arrowhead (Thicker stroke-width of 3.8) -->
     <path d="M 21,9 H 25 V 13" 
           fill="none" 
-          stroke="url(#chartGrad)" 
-          stroke-width="3" 
+          stroke="#ffffff" 
+          stroke-width="3.8" 
           stroke-linecap="round" 
           stroke-linejoin="round" />
   </g>
